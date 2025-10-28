@@ -1,3 +1,4 @@
+
 # Gestor de Activos Corporativos - Proyecto React
 
 ¡Hola! 👋 Este es mi proyecto de prueba técnica para la posición de Desarrollador/a React.
@@ -112,4 +113,8 @@ npm run dev
 
 ¡Y eso es todo! 🙌  
 Cualquier duda sobre cómo correrlo o cómo funciona, se puede revisar directamente en el código.  
+<<<<<<< HEAD
 La idea era que sea **simple, funcional y entendible**, listo para una prueba técnica de React.
+=======
+La idea era que sea **simple, funcional y entendible**, listo para una prueba técnica de React.
+>>>>>>> 531ab4cb6110964b5f316f24b5c0240b55c23ff7
