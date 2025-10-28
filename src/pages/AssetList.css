@@ -1,0 +1,153 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --success: #10b981;
+  --danger: #ef4444;
+  --light: #f8fafc;
+  --dark: #1e293b;
+  --border: #e2e8f0;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+a button {
+  background: var(--primary);
+  color: white;
+}
+
+a button:hover {
+  background: var(--primary-dark);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+thead {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+th {
+  padding: 15px;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+td {
+  padding: 15px;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+td:nth-child(3) {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+td:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+td button:first-child {
+  background: var(--success);
+  color: white;
+}
+
+td button:first-child:hover {
+  background: #0f9d58;
+}
+
+td button:last-child {
+  background: var(--danger);
+  color: white;
+}
+
+td button:last-child:hover {
+  background: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  div {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  td:last-child {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  div {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+}

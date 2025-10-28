@@ -1,0 +1,118 @@
+.app-shell {
+  display: flex;
+  min-height: 10vh;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #ffffff;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  
+}
+
+.menu-nav a button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-nav a button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Usuario */
+.usuario {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.usuario div {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.usuario button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.usuario button:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.contenido-principal {
+  flex: 1;
+  padding: 40px 30px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+
+@media (max-width: 1024px) {
+  .app-shell {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: auto;
+    margin: 0 auto 20px auto;
+  }
+  
+  .contenido-principal {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 20px 15px;
+  }
+
+  .menu-nav a button,
+  .usuario button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
