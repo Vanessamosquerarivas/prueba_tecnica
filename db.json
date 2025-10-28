@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Test",
+      "email": "admin@test.com",
+      "password": "password123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "email": "jane@test.com",
+      "password": "password123",
+      "role": "employee"
+    },
+    {
+      "id": "21ac",
+      "name": "vanessa",
+      "email": "vanesa@gmail.com",
+      "password": "vane123",
+      "role": "employee"
+    },
+    {
+      "id": "9288",
+      "name": "alejandra",
+      "email": "aleja@gmail.com",
+      "password": "contraseña123",
+      "role": "employee"
+    }
+  ],
+  "assets": [
+    {
+      "name": "Laptop Pro 15\"",
+      "model": "Apple M3 Pro",
+      "status": "available",
+      "userId": 2,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Monitor Curvo 27\"",
+      "model": "Samsung Odyssey G5",
+      "status": "available",
+      "userId": null
+    },
+    {
+      "id": "3",
+      "name": "Silla Ergonómica",
+      "model": "Herman Miller Aeron",
+      "status": "maintenance",
+      "userId": null
+    },
+    {
+      "id": "4",
+      "name": "Teclado Mecánico",
+      "model": "Keychron Q1",
+      "status": "assigned",
+      "userId": 1
+    },
+    {
+      "id": "48eb",
+      "name": "teclado",
+      "model": "v3",
+      "status": "maintenance",
+      "userId": null
+    }
+  ]
+}
